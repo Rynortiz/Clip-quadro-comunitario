@@ -1,0 +1,74 @@
+.navbar-custom {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border-bottom: 3px solid #ee7db6;
+}
+
+.brand-logo {
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  background: linear-gradient(135deg, #ee7db6 0%, #ff9ed5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: transform 0.3s ease;
+}
+
+.brand-logo:hover {
+  transform: scale(1.05);
+}
+
+.logo-icon {
+  font-size: 28px;
+  display: inline-block;
+}
+
+.nav-link-custom {
+  color: #ffffff !important;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  margin-left: 25px;
+  position: relative;
+  transition: color 0.3s ease;
+  text-transform: uppercase;
+}
+
+.nav-link-custom::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: -8px;
+  left: 0;
+  background: linear-gradient(90deg, #ee7db6, #ff9ed5);
+  transition: width 0.3s ease;
+}
+
+.nav-link-custom:hover {
+  color: #ee7db6 !important;
+}
+
+.nav-link-custom:hover::after {
+  width: 100%;
+}
+
+/* Responsivo */
+@media (max-width: 991px) {
+  .navbar-custom {
+    padding: 15px 0;
+  }
+
+  .nav-link-custom {
+    margin-left: 0;
+    padding: 10px 0;
+  }
+
+  .nav-link-custom::after {
+    bottom: -5px;
+  }
+}

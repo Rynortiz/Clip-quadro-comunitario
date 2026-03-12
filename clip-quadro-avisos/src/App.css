@@ -1,5 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+  --cor-rosa: #ee7db6;
+  --cor-braco: #ffffff;
+  --cor-cinza1: #666566;
+  --cor-fundo: #282731;
+  --cor-preto: #000000;
+}
+
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--cor-braco);
+}
+
+.container{
+  width: 100%;
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+}
+
+.icone {
+  width: 50px;
+  height: 50px;
+  background-image: url(estrela-rosinha.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: anima linear infinite;
+  animation-duration: calc(300s / var(--i));
+}
+
+@keyframes anima {
+  0% {
+    transform: translateY(100vh) scale(0.5) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-100vh) scale(1) rotate(360deg);
+  }
 }
 
 .App-logo {
@@ -13,20 +65,7 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
+/* Estilos de header agora em src/styles/Header.css */
 
 @keyframes App-logo-spin {
   from {
