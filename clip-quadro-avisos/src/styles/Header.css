@@ -1,14 +1,14 @@
 .navbar-custom {
-  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%) !important;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  border-bottom: 3px solid #ee7db6;
+  background: linear-gradient(135deg, #349655 0%, #25504c 100%) !important;
+  box-shadow: 0 4px 12px #fcd62d 50%;
+  border-bottom: 3px solid #fcd62d ;
 }
 
 .brand-logo {
   font-size: 26px;
   font-weight: 700;
   letter-spacing: 2px;
-  background: linear-gradient(135deg, #ee7db6 0%, #ff9ed5 100%);
+  background: linear-gradient(135deg, #fcd62d 0%, #f7a030 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -45,12 +45,12 @@
   height: 3px;
   bottom: -8px;
   left: 0;
-  background: linear-gradient(90deg, #ee7db6, #ff9ed5);
+  background: linear-gradient(90deg, #fcd62d , #f7a030);
   transition: width 0.3s ease;
 }
 
 .nav-link-custom:hover {
-  color: #ee7db6 !important;
+  color: #fcd62d !important;
 }
 
 .nav-link-custom:hover::after {
